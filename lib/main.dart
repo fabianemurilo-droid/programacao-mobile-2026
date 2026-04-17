@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/my_home_page.dart';
+import 'package:flutter_app/rotas/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -7,6 +8,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
+  
 
   // This widget is the root of your application.
   @override
@@ -14,11 +16,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Curso de Programação mobile',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors. blue),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
       ),
-      home: const  MyHomePage(title: 'Flutter Demo Home Page'),
+     initialRoute: '/',
+     routes: appRoutes
     );
   }
 }
-
-

@@ -6,7 +6,9 @@ class Aula01 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(child: Text("Container"),),
+      body: Container(
+        child: Text("Container"),
+      ),
     );
   }
 }
