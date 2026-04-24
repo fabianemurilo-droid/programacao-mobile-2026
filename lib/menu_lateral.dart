@@ -15,7 +15,7 @@ class _MenuLateralState extends State<MenuLateral> {
         padding: EdgeInsets.zero,
         children: [
           const DrawerHeader(
-              decoration: BoxDecoration(color: Colors.tealAccent),
+              decoration: BoxDecoration(color: Color.fromARGB(255, 41, 125, 235)),
               child: Text('Curso Flutter')),
           ListTile(
             leading: const Icon(Icons.crop_square),
