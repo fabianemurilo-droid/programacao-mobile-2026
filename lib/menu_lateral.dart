@@ -1,4 +1,3 @@
-@@ -1,23 +1,21 @@
 import 'package:flutter/material.dart';
 
 class MenuLateral extends StatefulWidget {
@@ -16,18 +15,17 @@ class _MenuLateralState extends State<MenuLateral> {
         padding: EdgeInsets.zero,
         children: [
           const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Colors.blue
-            ),
             decoration: BoxDecoration(color: Colors.blue),
             child: Text('Curso Flutter'),
           ),
           ListTile(
-@@ -28,10 +26,15 @@
+            leading: const Icon(Icons.crop_square),
+            title: const Text("01 - Container"),
+            onTap: () => Navigator.pushNamed(context, "/aula01"),
+          ),
           ListTile(
             leading: const Icon(Icons.table_rows),
             title: const Text("02 - Linhas e Colunas"),
-            onTap: () => Navigator.pushNamed(context, "/aula02")
             onTap: () => Navigator.pushNamed(context, "/aula02"),
           ),
           ListTile(

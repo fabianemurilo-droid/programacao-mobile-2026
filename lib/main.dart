@@ -8,18 +8,17 @@ void main() {
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
-  
 
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Curso de Programação mobile',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 41, 125, 235)),
-      ),
-     initialRoute: '/',
-     routes: appRoutes
-    );
+        title: 'Curso de Programação mobile',
+        theme: ThemeData(
+          colorScheme: ColorScheme.fromSeed(
+              seedColor: Color.fromARGB(255, 41, 125, 235)),
+        ),
+        initialRoute: '/',
+        routes: appRoutes);
   }
 }
