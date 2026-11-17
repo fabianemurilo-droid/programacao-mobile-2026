@@ -11,14 +11,13 @@ class Aula03 extends StatelessWidget {
         // Centraliza o título da AppBar
         centerTitle: true,
       ),
-      // AppBar
       body: SingleChildScrollView(
         // Adiciona um padding em torno do conteúdo da tela
         padding: EdgeInsets.all(20),
-        // Precisamos do container para aplicar alinhamento de for
+        // Precisamos do container para aplicar alinhamento de forma correta
         child: Container(
           width: double.infinity,
-          child: const Column(
+          child: Column(
             mainAxisSize: MainAxisSize.max,
             // Alinhando ao centro
             mainAxisAlignment: MainAxisAlignment.center,
@@ -29,10 +28,55 @@ class Aula03 extends StatelessWidget {
                 radius: 65,
                 backgroundColor: Colors.indigo,
                 child: Icon(
-                  Icons.add_ic_call_outlined,
+                  Icons.person,
+                  color: Colors.white,
                   size: 70,
                 ),
-              )
+              ),
+              SizedBox(height: 20),
+              Text(
+                "Leonardo Roberto",
+                style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+              Text(
+                "Professor",
+                style: TextStyle(
+                  fontSize: 16,
+                  color: Colors.grey,
+                ),
+              ),
+              const SizedBox(height: 38),
+              // Dispor elementos em linha
+              Row(
+                children: [
+                  Container(
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.indigo.shade50,
+                      borderRadius: BorderRadius.circular(50),
+                    ),
+                    child: const Column(children:[
+                      Icon(
+                        Icons.abc,
+                        size: 40,
+                        color: Colors.indigo,
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        "Texto",
+                        style: TextStyle(
+                          fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                        ), // Textstyle
+                      ), // Text
+                      Text("Titulo"),
+                    ]),
+                  )
+                ],
+              ),
             ],
           ),
         ),
